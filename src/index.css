@@ -1,0 +1,128 @@
+:root {
+  --color-primary: #0D9488;
+  --color-secondary: #10B981;
+  --color-dark: #1a1a2e;
+  --color-light: #f8fafc;
+  --color-accent: #06b6d4;
+  --color-white: #ffffff;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-500: #64748b;
+  --color-gray-700: #334155;
+  --color-gray-900: #0f172a;
+
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12);
+  --shadow-glass: 0 8px 32px rgba(13, 148, 136, 0.1);
+
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-gray-900);
+  background-color: var(--color-light);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.75rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+
+p {
+  color: var(--color-gray-700);
+  line-height: 1.7;
+}
+
+/* Utility classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 7rem 0;
+  }
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s var(--transition), transform 0.7s var(--transition);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

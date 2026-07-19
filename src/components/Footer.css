@@ -20,6 +20,7 @@
 .footer__logo {
   font-size: 1.1rem;
   font-weight: 700;
+  font-family: 'Trebuchet MS', sans-serif;
   background: linear-gradient(135deg, var(--accent), var(--accent-tint));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

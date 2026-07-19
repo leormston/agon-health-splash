@@ -1,16 +1,27 @@
 :root {
-  --color-primary: #0D9488;
-  --color-secondary: #10B981;
-  --color-dark: #1a1a2e;
-  --color-light: #f8fafc;
-  --color-accent: #06b6d4;
+  --bg: #FAF3E9;
+  --surface: #E8DAC5;
+  --border: #D9CBB4;
+  --text-primary: #3E2B23;
+  --text-secondary: #6B584C;
+  --secondary: #A67B5B;
+  --accent: #FF5A1F;
+  --accent-pressed: #E64A0D;
+  --accent-tint: #F2C8A8;
+
+  /* Mapped aliases for existing component usage */
+  --color-primary: var(--accent);
+  --color-secondary: var(--secondary);
+  --color-dark: var(--text-primary);
+  --color-light: var(--bg);
+  --color-accent: var(--accent);
   --color-white: #ffffff;
-  --color-gray-100: #f1f5f9;
-  --color-gray-200: #e2e8f0;
-  --color-gray-300: #cbd5e1;
-  --color-gray-500: #64748b;
-  --color-gray-700: #334155;
-  --color-gray-900: #0f172a;
+  --color-gray-100: var(--bg);
+  --color-gray-200: var(--surface);
+  --color-gray-300: var(--border);
+  --color-gray-500: var(--text-secondary);
+  --color-gray-700: var(--text-secondary);
+  --color-gray-900: var(--text-primary);
 
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
@@ -19,10 +30,10 @@
   --radius-lg: 20px;
   --radius-xl: 28px;
 
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12);
-  --shadow-glass: 0 8px 32px rgba(13, 148, 136, 0.1);
+  --shadow-sm: 0 1px 3px rgba(62, 43, 35, 0.06);
+  --shadow-md: 0 4px 12px rgba(62, 43, 35, 0.08);
+  --shadow-lg: 0 12px 40px rgba(62, 43, 35, 0.1);
+  --shadow-glass: 0 8px 32px rgba(166, 123, 91, 0.12);
 
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -44,8 +55,8 @@ body {
   font-family: var(--font-family);
   font-weight: 400;
   line-height: 1.6;
-  color: var(--color-gray-900);
-  background-color: var(--color-light);
+  color: var(--text-primary);
+  background-color: var(--bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -93,7 +104,7 @@ h3 {
 }
 
 p {
-  color: var(--color-gray-700);
+  color: var(--text-secondary);
   line-height: 1.7;
 }
 

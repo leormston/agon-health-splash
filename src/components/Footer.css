@@ -1,5 +1,5 @@
 .footer {
-  background: var(--color-dark);
+  background: var(--text-primary);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   padding: 2rem 0;
 }
@@ -20,7 +20,7 @@
 .footer__logo {
   font-size: 1.1rem;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  background: linear-gradient(135deg, var(--accent), var(--accent-tint));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -28,5 +28,5 @@
 
 .footer__copyright {
   font-size: 0.875rem;
-  color: var(--color-gray-500);
+  color: var(--text-secondary);
 }

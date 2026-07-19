@@ -1,5 +1,5 @@
 .mission {
-  background: var(--color-white);
+  background: var(--bg);
   position: relative;
 }
 
@@ -28,14 +28,14 @@
 }
 
 .mission__content h2 {
-  color: var(--color-dark);
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
 }
 
 .mission__content p {
   font-size: 1.1rem;
   margin-bottom: 1.25rem;
-  color: var(--color-gray-700);
+  color: var(--text-secondary);
 }
 
 .mission__content p:last-child {
@@ -58,12 +58,12 @@
   width: 100%;
   max-width: 400px;
   aspect-ratio: 1;
-  background: linear-gradient(135deg, rgba(13, 148, 136, 0.08), rgba(16, 185, 129, 0.08));
+  background: linear-gradient(135deg, rgba(255, 90, 31, 0.06), rgba(166, 123, 91, 0.08));
   border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(13, 148, 136, 0.1);
+  border: 1px solid var(--border);
 }
 
 .mission__illustration-icon {
@@ -86,11 +86,11 @@
   display: block;
   font-size: 1.75rem;
   font-weight: 800;
-  color: var(--color-primary);
+  color: var(--accent);
 }
 
 .mission__stat-label {
   font-size: 0.85rem;
-  color: var(--color-gray-500);
+  color: var(--text-secondary);
   margin-top: 0.25rem;
 }

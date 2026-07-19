@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--color-dark) 0%, #16213e 40%, #0f3460 70%, #1a1a2e 100%);
+  background: linear-gradient(135deg, var(--text-primary) 0%, #4a3228 40%, #5c3d2e 70%, #3E2B23 100%);
   overflow: hidden;
   padding: 2rem 0;
 }
@@ -20,7 +20,7 @@
 .hero__bg-orb--1 {
   width: 400px;
   height: 400px;
-  background: var(--color-primary);
+  background: var(--accent);
   top: -100px;
   right: -100px;
   animation-delay: 0s;
@@ -29,7 +29,7 @@
 .hero__bg-orb--2 {
   width: 300px;
   height: 300px;
-  background: var(--color-secondary);
+  background: var(--secondary);
   bottom: -80px;
   left: -80px;
   animation-delay: -3s;
@@ -38,7 +38,7 @@
 .hero__bg-orb--3 {
   width: 200px;
   height: 200px;
-  background: var(--color-accent);
+  background: var(--accent-tint);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -67,24 +67,24 @@
   width: 80px;
   height: 80px;
   border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  box-shadow: 0 8px 32px rgba(13, 148, 136, 0.3);
+  background: linear-gradient(135deg, var(--accent), var(--secondary));
+  box-shadow: 0 8px 32px rgba(255, 90, 31, 0.3);
 }
 
 .hero__logo-placeholder span {
   font-size: 2.5rem;
   font-weight: 800;
-  color: var(--color-white);
+  color: #ffffff;
 }
 
 .hero__title {
-  color: var(--color-white);
+  color: #ffffff;
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
 }
 
 .hero__title-accent {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  background: linear-gradient(135deg, var(--accent), var(--accent-tint));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -92,14 +92,14 @@
 
 .hero__tagline {
   font-size: clamp(1.25rem, 3vw, 1.75rem);
-  color: var(--color-gray-200);
+  color: var(--surface);
   font-weight: 300;
   margin-bottom: 1.5rem;
 }
 
 .hero__subtitle {
   font-size: 1.1rem;
-  color: var(--color-gray-300);
+  color: var(--border);
   max-width: 540px;
   margin: 0 auto 2.5rem;
   line-height: 1.7;
@@ -123,19 +123,20 @@
 }
 
 .hero__button--primary {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  color: var(--color-white);
-  box-shadow: 0 4px 20px rgba(13, 148, 136, 0.4);
+  background: var(--accent);
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(255, 90, 31, 0.4);
 }
 
 .hero__button--primary:hover {
+  background: var(--accent-pressed);
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(13, 148, 136, 0.5);
+  box-shadow: 0 8px 30px rgba(255, 90, 31, 0.5);
 }
 
 .hero__button--secondary {
   background: rgba(255, 255, 255, 0.08);
-  color: var(--color-white);
+  color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
 }

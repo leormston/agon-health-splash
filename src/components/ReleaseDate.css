@@ -1,5 +1,5 @@
 .release {
-  background: var(--color-dark);
+  background: var(--text-primary);
   position: relative;
   overflow: hidden;
 }
@@ -11,7 +11,7 @@
   left: -20%;
   width: 60%;
   height: 200%;
-  background: radial-gradient(ellipse, rgba(13, 148, 136, 0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(255, 90, 31, 0.06) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -20,13 +20,13 @@
 }
 
 .release__content h2 {
-  color: var(--color-white);
+  color: #ffffff;
   margin-bottom: 1.25rem;
 }
 
 .release__description {
   font-size: 1.15rem;
-  color: var(--color-gray-300);
+  color: var(--border);
   max-width: 560px;
   margin: 0 auto 3rem;
 }
@@ -39,8 +39,8 @@
 
 .release__badge {
   position: relative;
-  background: linear-gradient(135deg, rgba(13, 148, 136, 0.15), rgba(6, 182, 212, 0.1));
-  border: 1px solid rgba(13, 148, 136, 0.3);
+  background: linear-gradient(135deg, rgba(255, 90, 31, 0.12), rgba(166, 123, 91, 0.08));
+  border: 1px solid rgba(255, 90, 31, 0.3);
   border-radius: var(--radius-xl);
   padding: 2rem 3rem;
   display: flex;
@@ -53,7 +53,7 @@
   position: absolute;
   inset: -2px;
   border-radius: var(--radius-xl);
-  border: 2px solid rgba(13, 148, 136, 0.4);
+  border: 2px solid rgba(255, 90, 31, 0.4);
   animation: pulse-ring 2.5s ease-in-out infinite;
 }
 
@@ -65,7 +65,7 @@
 .release__date-label {
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--color-gray-300);
+  color: var(--border);
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -73,7 +73,7 @@
 .release__date-value {
   font-size: 2.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  background: linear-gradient(135deg, var(--accent), var(--accent-tint));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -97,36 +97,36 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 0.9rem;
-  color: var(--color-gray-500);
+  color: var(--text-secondary);
 }
 
 .release__timeline-item--done {
-  color: var(--color-secondary);
+  color: var(--accent-tint);
 }
 
 .release__timeline-item--active {
-  color: var(--color-primary);
+  color: var(--accent);
 }
 
 .release__timeline-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--color-gray-500);
+  background: var(--text-secondary);
   flex-shrink: 0;
 }
 
 .release__timeline-item--done .release__timeline-dot {
-  background: var(--color-secondary);
+  background: var(--accent-tint);
 }
 
 .release__timeline-item--active .release__timeline-dot {
-  background: var(--color-primary);
-  box-shadow: 0 0 8px rgba(13, 148, 136, 0.6);
+  background: var(--accent);
+  box-shadow: 0 0 8px rgba(255, 90, 31, 0.6);
   animation: dot-glow 2s ease-in-out infinite;
 }
 
 @keyframes dot-glow {
-  0%, 100% { box-shadow: 0 0 4px rgba(13, 148, 136, 0.4); }
-  50% { box-shadow: 0 0 12px rgba(13, 148, 136, 0.8); }
+  0%, 100% { box-shadow: 0 0 4px rgba(255, 90, 31, 0.4); }
+  50% { box-shadow: 0 0 12px rgba(255, 90, 31, 0.8); }
 }

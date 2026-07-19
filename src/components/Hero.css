@@ -58,13 +58,22 @@
 
 .hero__logo {
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .hero__logo-img {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   border-radius: var(--radius-lg);
   object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .hero__logo-img {
+    width: 220px;
+    height: 220px;
+  }
 }
 
 .hero__title {

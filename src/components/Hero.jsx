@@ -12,9 +12,7 @@ function Hero() {
 
       <div className={`container hero__content fade-in ${isVisible ? 'visible' : ''}`} ref={ref}>
         <div className="hero__logo">
-          <div className="hero__logo-placeholder">
-            <span>A</span>
-          </div>
+          <img src="/logo_icon.png" alt="Agon Health logo" className="hero__logo-img" />
         </div>
 
         <h1 className="hero__title">

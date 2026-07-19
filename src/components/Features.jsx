@@ -6,7 +6,7 @@ const features = [
     emoji: '📊',
     title: 'Health Tracking',
     description:
-      'Effortlessly monitor your daily metrics — sleep, activity, nutrition, and more — all in one unified dashboard.',
+      'Effortlessly monitor your daily metrics - sleep, activity, nutrition, and more - all in one unified dashboard.',
   },
   {
     emoji: '🧠',

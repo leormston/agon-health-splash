@@ -13,12 +13,12 @@ function Mission() {
             <h2>Empowering you to take control of your health</h2>
             <p>
               We believe that everyone deserves access to meaningful health insights. Agon Health
-              transforms complex health data into clear, actionable guidance — making it simple to
+              transforms complex health data into clear, actionable guidance, making it simple to
               understand your body and make informed decisions about your wellbeing.
             </p>
             <p>
               By combining cutting-edge data science with intuitive design, we're building a platform
-              that meets you where you are — whether you're just starting your health journey or
+              that meets you where you are, whether you're just starting your health journey or
               looking to optimise peak performance.
             </p>
 

@@ -51,8 +51,8 @@ function Contact() {
           </div>
 
           <div className="contact__info">
-            <a href="mailto:hello@agonhealth.com" className="contact__email">
-              hello@agonhealth.com
+            <a href="mailto:louie@louie.cloud" className="contact__email">
+              louie@louie.cloud
             </a>
 
             <div className="contact__social">

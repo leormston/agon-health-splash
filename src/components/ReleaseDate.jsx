@@ -18,27 +18,27 @@ function ReleaseDate() {
           <div className="release__date-container">
             <div className="release__badge">
               <div className="release__pulse" />
-              <span className="release__date-label">Target Launch</span>
-              <span className="release__date-value">Q1 2027</span>
+              <span className="release__date-label">iOS Public Release</span>
+              <span className="release__date-value">Q4 2026</span>
             </div>
           </div>
 
           <div className="release__timeline">
             <div className="release__timeline-item release__timeline-item--done">
               <span className="release__timeline-dot" />
-              <span>Research & Design</span>
+              <span>Finalise Alpha - Q2 2026</span>
             </div>
             <div className="release__timeline-item release__timeline-item--active">
               <span className="release__timeline-dot" />
-              <span>Development</span>
+              <span>Beta Testing on iOS - Q3 2026</span>
             </div>
             <div className="release__timeline-item">
               <span className="release__timeline-dot" />
-              <span>Beta Testing</span>
+              <span>iOS Public Release - Q4 2026</span>
             </div>
             <div className="release__timeline-item">
               <span className="release__timeline-dot" />
-              <span>Launch</span>
+              <span>Android Release - Q1 2027</span>
             </div>
           </div>
         </div>
